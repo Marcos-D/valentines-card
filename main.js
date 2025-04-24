@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     yesBtn.addEventListener("click", function () {
-        const freakImage = document.getElementById("freakImage");
-        freakImage.classList.add("animate"); // Trigger animation
+        const happyEmojiImage = document.getElementById("happyEmojiImage");
+        happyEmojiImage.classList.add("animate"); // Trigger animation
     });
 
     // No Button Click

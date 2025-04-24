@@ -670,7 +670,7 @@ button:hover {
    }
 }
 
-#freakImage {
+#happyEmojiImage {
     position: absolute;
     top: 20%;
     left: 50%;
@@ -682,7 +682,7 @@ button:hover {
     z-index: 9999; /* ✅ Ensures it stays ABOVE everything */
 }
 
-#freakImage.animate {
+#happyEmojiImage.animate {
     opacity: 1;
     transform: translate(-50%, -50%) scale(7) rotate(360deg); /* Grow and rotate */
 }
