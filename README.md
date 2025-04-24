@@ -10,4 +10,4 @@ Check it out here: [https://valentine-sigma-lilac.vercel.app/](https://valentine
 2. Click the envelope to reveal the message
 3. Choose your response with the buttons
 
-Made with ❤️ by a brother for his sister-in-law (because I have no rizz) 
+Made for my brother (because I have no rizz) 
