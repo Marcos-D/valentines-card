@@ -46,47 +46,36 @@ div {
   background: white;
   height: 25vmin;
   width: 43vmin;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   left: 2.5vmin;
   top: 0vmin;
-  z-index: 1;
-  transition: transform 0.5s ease-in-out;
+  
+  /* animation: slide-rev 0.2s ease-out; */
 }
-
-/* .message { */
-    /* font-size: 2rem; Makes the main text more prominent */
-    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); Adds a soft glow */
-/* } */
 
 .message {
-    font-size: min(4vw, 2rem); /* Responsive font size that won't get too large */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 3rem;
-    position: relative;
-    top: -2rem;
-    text-align: center;
-    width: 90%; /* Prevent text from overflowing */
-    max-width: 600px;
+    font-size: 2rem; /* Keeps text readable */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Soft glow */
+    margin-bottom: 3rem; /* Moves text up */
+    position: relative; /* Keeps it positioned correctly */
+    top: -2rem; /* Moves text higher */
+}
+
+/* Lid Animation - Smoothly Flips Open */
+.open-lid {
+    transform: rotateX(180deg);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+/* Card Slide Up After Lid Opens */
+.slide-card {
+    transform: translateY(-15vmin);
+    transition: transform 0.5s ease-in-out;
     z-index: 2;
-}
-
-/* Additional responsive breakpoints */
-@media screen and (max-width: 768px) {
-    .message {
-        font-size: min(5vw, 1.8rem);
-        margin-bottom: 2rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .message {
-        font-size: min(6vw, 1.5rem);
-        margin-bottom: 1.5rem;
-        top: -1rem;
-    }
 }
 
 .cover {
@@ -185,20 +174,6 @@ button {
 button:hover {
     background-color: #ff3b5c;
 }
-
-
-  /* Lid Animation - Smoothly Flips Open */
-.open-lid {
-    transform: rotateX(180deg);
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  /* Card Slide Up After Lid Opens */
-  .slide-card {
-    transform: translateY(-15vmin);
-    z-index: 2;
-  }
-  
 
 .shadow {
     position: relative;
