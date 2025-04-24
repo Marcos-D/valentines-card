@@ -57,6 +57,11 @@ div {
   /* animation: slide-rev 0.2s ease-out; */
 }
 
+/* .message { */
+    /* font-size: 2rem; Makes the main text more prominent */
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); Adds a soft glow */
+/* } */
+
 .message {
     font-size: 2rem; /* Keeps text readable */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Soft glow */
@@ -65,18 +70,6 @@ div {
     top: -2rem; /* Moves text higher */
 }
 
-/* Lid Animation - Smoothly Flips Open */
-.open-lid {
-    transform: rotateX(180deg);
-    transition: transform 0.5s ease-in-out;
-  }
-  
-/* Card Slide Up After Lid Opens */
-.slide-card {
-    transform: translateY(-15vmin);
-    transition: transform 0.5s ease-in-out;
-    z-index: 2;
-}
 
 .cover {
   position: absolute;
@@ -174,6 +167,21 @@ button {
 button:hover {
     background-color: #ff3b5c;
 }
+
+
+  /* Lid Animation - Smoothly Flips Open */
+.open-lid {
+    transform: rotateX(180deg);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Card Slide Up After Lid Opens */
+  .slide-card {
+    transform: translateY(-15vmin);
+    transition: transform 0.5s ease-in-out;
+    z-index: 2;
+  }
+  
 
 .shadow {
     position: relative;
@@ -662,7 +670,7 @@ button:hover {
    }
 }
 
-#happyEmojiImage {
+#happyImage {
     position: absolute;
     top: 20%;
     left: 50%;
@@ -674,7 +682,7 @@ button:hover {
     z-index: 9999; /* ✅ Ensures it stays ABOVE everything */
 }
 
-#happyEmojiImage.animate {
+#happyImage.animate {
     opacity: 1;
     transform: translate(-50%, -50%) scale(7) rotate(360deg); /* Grow and rotate */
 }
@@ -696,4 +704,3 @@ button:hover {
     opacity: 1;
     transform: translate(-50%, -50%) scale(7) rotate(360deg); /* Grow and rotate */
 }
-
