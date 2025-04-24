@@ -46,15 +46,14 @@ div {
   background: white;
   height: 25vmin;
   width: 43vmin;
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   left: 2.5vmin;
   top: 0vmin;
-  
-  /* animation: slide-rev 0.2s ease-out; */
+  z-index: 1;
+  transition: transform 0.5s ease-in-out;
 }
 
 /* .message { */
@@ -71,6 +70,7 @@ div {
     text-align: center;
     width: 90%; /* Prevent text from overflowing */
     max-width: 600px;
+    z-index: 2;
 }
 
 /* Additional responsive breakpoints */
@@ -196,7 +196,6 @@ button:hover {
   /* Card Slide Up After Lid Opens */
   .slide-card {
     transform: translateY(-15vmin);
-    transition: transform 0.5s ease-in-out;
     z-index: 2;
   }
   
