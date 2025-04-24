@@ -63,13 +63,31 @@ div {
 /* } */
 
 .message {
-    font-size: 2rem; /* Keeps text readable */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Soft glow */
-    margin-bottom: 3rem; /* Moves text up */
-    position: relative; /* Keeps it positioned correctly */
-    top: -2rem; /* Moves text higher */
+    font-size: min(4vw, 2rem); /* Responsive font size that won't get too large */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 3rem;
+    position: relative;
+    top: -2rem;
+    text-align: center;
+    width: 90%; /* Prevent text from overflowing */
+    max-width: 600px;
 }
 
+/* Additional responsive breakpoints */
+@media screen and (max-width: 768px) {
+    .message {
+        font-size: min(5vw, 1.8rem);
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .message {
+        font-size: min(6vw, 1.5rem);
+        margin-bottom: 1.5rem;
+        top: -1rem;
+    }
+}
 
 .cover {
   position: absolute;
